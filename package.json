@@ -33,7 +33,7 @@
   "scripts": {
     "build": "yarn clean && parcel build --out-dir . public/index.html",
     "clean": "yarn run -s find-artifacts | xargs rimraf",
-    "find-artifacts": "node -e \"require('tiny-glob')('*(index.html|src.*.+(js|js.map))').then(fs => fs.map(f => console.log(f)))\"",
+    "find-artifacts": "node -e \"require('tiny-glob')('*(index.html|site.webmanifest|*.+(ico|png)|src.*.+(js|js.map))').then(fs => fs.map(f => console.log(f)))\"",
     "preview": "parcel public/index.html",
     "test": "tape --require ts-node/register 'test/**/*.test.+(ts|tsx)'"
   },

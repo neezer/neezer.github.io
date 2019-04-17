@@ -9,10 +9,10 @@ require("jsdom-global")();
 test("shows a friendly message", (t: Test) => {
   t.plan(1);
 
-  const { getByText } = render(<App />);
-
   try {
-    getByText("Hello World!");
+    const { getByText } = render(<App assets={{ images: {} }} />);
+
+    getByText("Evan Sherwood");
 
     t.pass("friendly message is correct");
   } catch (error) {
