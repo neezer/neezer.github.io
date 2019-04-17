@@ -16,7 +16,8 @@ const container = css`
 const style = css`
   font-family: Montserrat, Ubuntu, sans-serif;
   border: 10px solid black;
-  padding: 10px;
+  padding: 10px 30px;
+  letter-spacing: 10px;
   text-transform: uppercase;
   text-align: center;
   font-size: 50px;
